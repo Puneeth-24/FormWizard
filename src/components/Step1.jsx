@@ -32,7 +32,6 @@ function Step1({state,dispatch}){
                     onChange={handleChange}
                 />
             </label>
-            <br />
             {error.name && <p className='error'>{error.name}</p>}
             <br />
             <label>Email:
@@ -43,7 +42,6 @@ function Step1({state,dispatch}){
                     onChange={handleChange}
                 />
             </label>
-            <br />
             {error.email && <p className='error'>{error.email}</p>}
             <button onClick={()=>goNext(validate,dispatch)}>Next</button>
         </div>
